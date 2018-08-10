@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<p>hiii there</p>
+
+<button onclick="myFunction()">click</button>
+
+<p id="d"></p>
+
+<script>
+function myFunction() {
+    var now;
+    var time = new Date().getHours();
+    if (time < 10) {
+        now = "gudmrg";
+    } else if (time < 16) {
+        now = "gudaftrn";
+    } else {
+        now = "gud ni8";
+    }
+document.getElementById("d").innerHTML = now;
+}
+</script>
+
+</body>
+</html>
